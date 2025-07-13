@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Najiya{% endblock %}
+{% block body_class%}portfolio{% endblock %}
+{% block content %}
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="{% static 'img/12.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Najiya Riyas</h2>
+            <p>I’m a passionate developer crafting modern, responsive web experiences. </p>
+            <a href="{% url 'about' %}" class="btn-get-started">About Me</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+    {% endblock %}
